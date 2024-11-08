@@ -9,7 +9,6 @@ use Symfony\Component\Routing\Attribute\Route;
 
 class ProfilController extends AbstractController
 {
-    
     #[Route('/profil', name: 'app_profil')]
     function profile(Request $req, UtilisateurRepository $repo)
     {
