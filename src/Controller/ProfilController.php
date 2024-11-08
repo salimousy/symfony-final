@@ -9,7 +9,7 @@ use Symfony\Component\Routing\Attribute\Route;
 
 class ProfilController extends AbstractController
 {
-    #[Route('/profil', name: 'app_profil')]
+    #[Route('/profil', name: 'app_profil', methods: ['GET'])]
     function profile(Request $req, UtilisateurRepository $repo)
     {
         if (!$this->isGranted("IS_AUTHENTICATED_FULLY")){
