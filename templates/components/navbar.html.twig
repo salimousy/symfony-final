@@ -6,12 +6,13 @@
 		</li>
 		{% if app.user %}
 			<li>
-				<a href={path{'app_profile'} } class="text-lg hover:text-indigo-500 transition-colors duration-200">Profile</a>
+				<a href={{path('app_profil')}} class="text-lg hover:text-indigo-500 transition-colors duration-200">Profil</a>
 			</li>
 			<li>
-				<a href={{'deconnexion'}} class="text-lg hover:text-indigo-500 transition-colors duration-200">Se déconnecter</a>
+				<a href={{path('app_deconnexion')}} class="text-lg hover:text-indigo-500 transition-colors duration-200">Se déconnecter</a>
 			</li>
 		{% else %}
+		
 			<a href={{ path('app_login')}} class="class="text-lg hover:text-indigo-500 transition-colors duration-200"">
 				Connexion
 			</a>

@@ -29,12 +29,11 @@ class LoginController extends AbstractController
             'form' => $form->createView(),
             'error' => $error
             ]);
-            if($error) {
-                $this->addFlash('error', 'veuillez rentrer le bon mot de passe' );
-                return $this->redirectToRoute('app_login');
-            }
+      
             
     }
+
+   
 
     
 }
